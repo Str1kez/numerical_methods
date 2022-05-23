@@ -35,7 +35,7 @@ def derivative_single() -> None:
     gt = np.cos(np.pi * x ** 2 / 2)  # подынтегральная функция
     # узлы Чебышёва
     chebyshev_nodes = (a + b) / 2 + (b - a) / 2 * np.cos([np.pi * (2 * k - 1) / 2 / n for k in range(1, n + 1)])
-    # На узлаx Чебышёва погрешность 0.0006, на равноотдаленных 0.0016
+    # * На узлаx Чебышёва погрешность 0.0006, на равноотдаленных 0.0016
     nodes = np.linspace(a, b, n)  # равноотдаленные узлы разбиения
     f = [taylor(x, e) for x in nodes]  # Fn
     for i, point in enumerate(x):  # расчет для фиксированных точек

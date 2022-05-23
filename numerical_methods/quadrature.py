@@ -11,7 +11,7 @@ def epsilon_dependency(func):
             n *= 2
             s_n = func(a, b, n)
             s_2_n = func(a, b, 2 * n)
-        return s_n
+        return s_n, n
     return wrapper
 
 
