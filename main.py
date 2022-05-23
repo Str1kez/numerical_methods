@@ -61,6 +61,6 @@ if __name__ == '__main__':
     # derivative_single()
     print(central(a, b, 1024))
     print(left(a, b, 1024))
-    print(trapezoid(a, b, 1024))
-    print(gauss(a, b, 1024))
+    print(trapezoid(a, b))
+    print(gauss(a, b))
     
